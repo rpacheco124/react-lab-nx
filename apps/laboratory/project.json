@@ -1,0 +1,9 @@
+{
+  "name": "laboratory",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/laboratory/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project laboratory --web",
+  "targets": {}
+}
