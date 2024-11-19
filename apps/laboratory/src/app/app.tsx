@@ -1,11 +1,18 @@
-import NxWelcome from './nx-welcome';
+import { SidebarProvider, SidebarTrigger, ThemeProvider } from "@react-lab-nx/ui-components";
+import { AppSidebar } from "./app-sidebar";
 
-export function App() {
+
+export default function App({ children }: { children: React.ReactNode }) {
   return (
-    <div>
-      <NxWelcome title="laboratory" />
-    </div>
-  );
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <SidebarProvider>
+        <AppSidebar />
+        <main>
+          <SidebarTrigger />
+          {children}
+        </main>
+      </SidebarProvider>
+    </ThemeProvider>
+  )
 }
 
-export default App;

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "apps/laboratory/tailwind.config.js",
+    "css": "apps/laboratory/src/styles.css",
+    "baseColor": "zinc",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@react-lab-nx/ui-components/components",
+    "utils": "@react-lab-nx/ui-components/lib/utils"
+  }
+}
