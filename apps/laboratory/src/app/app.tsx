@@ -1,17 +1,12 @@
-import { SidebarProvider, SidebarTrigger, ThemeProvider } from "@react-lab-nx/ui-components";
-import { AppSidebar } from "./app-sidebar";
+
+import { ThemeProvider } from "@react-lab-nx/ui-components";
+import { Layout } from "./layout";
 
 
-export default function App({ children }: { children: React.ReactNode }) {
+export default function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <SidebarProvider>
-        <AppSidebar />
-        <main>
-          <SidebarTrigger />
-          {children}
-        </main>
-      </SidebarProvider>
+      <Layout />
     </ThemeProvider>
   )
 }
