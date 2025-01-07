@@ -2,6 +2,7 @@ import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import App from './app/app';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { CalculatorApp } from '@react-lab-nx/calculator';
 
 
 const router = createBrowserRouter([
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "calculator",
-        element: <h1>Calculator :D </h1>
+        element: <CalculatorApp></CalculatorApp>
       }
     ]
   },
